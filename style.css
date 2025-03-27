@@ -139,10 +139,7 @@ body {
 .icon{
     width: 30px;
     height: 30px;
-    
-    background-size: cover;
-    
-    
+    background-size: cover;    
 }
 .my-journey-page{
     width: 100%;
@@ -162,6 +159,27 @@ body {
     font-weight: 600;
     transform: scaleX(1.2);
 
+}
+#edu-in h2,#exp-in h2{
+    color: #0099ff;
+    margin:5px;
+}
+#edu-in h4, #exp-in h4{
+    color: rgb(220, 220, 220);
+    margin: 10px;
+}
+.edu-head{
+   
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    transform: scaleX(1.2);
+    color: rgb(238, 238, 238);
+}
+.exp-head{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    transform: scaleX(1.2);
+    color: rgb(238, 238, 238);
 }
 .journey-box{
     height: 150px;
@@ -203,13 +221,13 @@ body {
 }
 #edu-in{
     width: 90%;
-    height: 28%;
+    height: 30%;
     border: solid #6CB3FF 2px;
 
 }
 #exp-in{
     width: 90%;
-    height: 28%;
+    height: 30%;
     border: solid #6CB3FF 2px;
 }
 
