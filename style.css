@@ -3,14 +3,28 @@
     padding: 0;
 }
 body {
-    overflow-x: hidden; /* Prevents horizontal scrolling */
+    overflow-x: hidden; 
+}
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* For Firefox */
+html {
+    scrollbar-width: none;
+}
+
+/* For Edge and IE */
+body {
+    -ms-overflow-style: none;
 }
 
 .home{
     height: 690px;
     width: 100% ;
-    background-color: #0a192f;
-    border: solid black 2px;
+    background-image: url(WhatsApp\ Image\ 2025-03-27\ at\ 23.14.59_b3d3e2b4.jpg);
+    background-size: cover;
+    
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -20,37 +34,76 @@ body {
 }
 
 .home1{
+    margin-top: 7px;
     width: 90%;
-    height: 70px;
-    background-color: aqua;
+    height: 50px;
     color: white;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content:space-between;
+    align-items: center;
     margin-left: 100px;
 }
+#nav-content:hover{
+    color: #6CB3FF;
+}
 .logo{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    transform: scaleX(1.1);
     width: 100px;
-    background-color: pink;
     color: white;
     font-size: 30px;
 }
 .right-nav{
     display: flex;
+    margin-right: 10px;
     flex-direction: row;
     justify-content: space-around;
-    background-color: pink;
-    width: 50%;
+    width: 45%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    transform: scaleX(1.1);
+}
+.home2-main{
+    display: flex;flex-direction: row;
+}
+.girl{
+    background-image: url(Screenshot_2025-03-27_230805-removebg-preview.png);
+    background-size: cover;
+    width: 700px;
+    height: 500px;
+    border-radius: 40%;
+    border: solid 4px rgb(49, 114, 255);
+    margin-left: 60px;
 }
 .home2{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    width: 40%;
+    justify-content: center;
+    width: 38%;
     height: 300px;
-    margin-left: 100px;
+    margin-left: 125px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    transform: scaleX(1.1);
 }
-
+#my-name{
+    height: 60px;
+    font-size: 50px;
+    color: white;
+}
+#front-dev{
+    height: 50px;
+    color: #0099ff;
+    font-size: 37px;
+}
+#about-me{
+    margin-top: 10px;
+    height: 120px;
+    font-size: 14px;
+    color: rgb(234, 234, 234);
+}
 .hire-box{
     display: flex;
     flex-direction: row;
@@ -58,49 +111,64 @@ body {
     width: 40%;
 }
 #talk{
-    border: solid rgb(54, 101, 255) 2px;
-    color: rgb(54, 101, 255);
+    padding-top: 10px;
+    text-align: center;
+    border:#6CB3FF solid 2px;
+    color:#6CB3FF;
     width: 100px;
-    height: 40px;
+    height: 30px;
     border-radius: 7px;
 }
 #hire{
-    
+    padding-top: 10px;
+    text-align: center;
     width: 100px;
-    height: 40px;
+    height: 30px;
     border-radius: 7px;
     color: #0a192f;
-    background-color: rgb(54, 101, 255);
+    background-color:#6CB3FF;
 }
 .home3{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    background-color: antiquewhite;
     width: 140px;
     padding: 6px;
     margin-left: 100px;
 }
 .icon{
-    width: 40px;
-    height: 40px;
-    border-radius: 50px;
-    background-color: black;
+    width: 30px;
+    height: 30px;
+    
+    background-size: cover;
+    
     
 }
 .my-journey-page{
     width: 100%;
     height: 728px;
-    background-color: #0a192f;
+    background-image: url(image2.png);
+    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 .journey-heading{
     
-    font-size: 40px;
+    font-size: 50px;
     color: white;
     text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    transform: scaleX(1.2);
+
+}
+.journey-box{
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: center;
 }
 .main-journey{
     display: flex;
@@ -148,7 +216,8 @@ body {
 .contact-page{
     width: 100%;
     height: 728px;
-    background-color: #0a192f;
+    background-image: url(image1.png);
+    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -162,7 +231,7 @@ body {
 }
 .contact-box{
     
-    width: 260px;
+    width: 280px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -172,11 +241,11 @@ body {
 }
 .contact{
     color: white;
-    font-size: 42px;
+    font-size: 50px;
 }
 .me{
     color:#258eff;
-    font-size: 42px;
+    font-size: 50px;
 }
 .input-main-box{
     height: 400px;
@@ -200,10 +269,10 @@ body {
     justify-content: center;
     margin: 5px;
 }
-input{
 
+input{
     height: 50px;
-    width: 40%;
+    width: 390px;
     background-color: transparent;
     border: none;
     color: white;
@@ -214,8 +283,14 @@ input::placeholder, textarea::placeholder { color: white; }
     border: #6CB3FF solid 2px;
     height: 50px;
     width: 40%;
+    border-radius: 5px;
+}
+#input:hover{
+    background-color: rgb(81, 133, 255);
 }
 .message-box{
+    border-radius: 5px;
+    margin-top: 5px;
     height: 260px;
     width: 100%;
     
@@ -255,8 +330,9 @@ button{
     text-align: center;
     padding: 10px;
     height: 40px;
-    width: 130px;
+    width: 110px;
     border: #6CB3FF solid 2px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 600;
+    transform: scaleX(1.2);
 }
