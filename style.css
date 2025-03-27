@@ -148,7 +148,7 @@ body {
     background-size: cover;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .journey-heading{
     
@@ -158,27 +158,33 @@ body {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     transform: scaleX(1.2);
+    display: flex;
+    flex-direction: row;
+    width: 270px;
+    justify-content: space-between;
 
 }
 #edu-in h2,#exp-in h2{
+    font-size: 21px;
     color: #0099ff;
     margin:5px;
 }
 #edu-in h4, #exp-in h4{
-    color: rgb(220, 220, 220);
+    color: rgb(177, 216, 221);
     margin: 10px;
 }
 .edu-head{
-   
+   font-size: 25px;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
-    transform: scaleX(1.2);
+    transform: scaleX(1.1);
     color: rgb(238, 238, 238);
 }
 .exp-head{
+    font-size: 25px;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
-    transform: scaleX(1.2);
+    transform: scaleX(1.1);
     color: rgb(238, 238, 238);
 }
 .journey-box{
@@ -187,6 +193,7 @@ body {
     flex-direction: row;
     align-items: end;
     justify-content: center;
+    padding-bottom: 10px-;
 }
 .main-journey{
     display: flex;
@@ -223,12 +230,14 @@ body {
     width: 90%;
     height: 30%;
     border: solid #6CB3FF 2px;
+    border-radius: 4px;
 
 }
 #exp-in{
     width: 90%;
     height: 30%;
     border: solid #6CB3FF 2px;
+    border-radius: 4px;
 }
 
 .contact-page{
